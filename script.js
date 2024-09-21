@@ -1,5 +1,8 @@
 function stringChop(str, size) {
   // your code here
+	   if (size <= 0 || str === '') {
+        return [];
+    }
 	let arr=[];
 	let s='';
 	
@@ -10,7 +13,7 @@ function stringChop(str, size) {
 			s='';
 		}
 	}
-	if (s !== '') {
+	if (s !== "") {
     arr.push(s);
   }
 	return arr;
